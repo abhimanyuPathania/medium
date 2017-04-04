@@ -1,5 +1,6 @@
 
 const fs = require('fs');
+const path = require('path');
 
 // update this to point to your service account key
 const key = require('../agent-smith.json');
@@ -19,7 +20,7 @@ module.exports = {
     },
     media: {
       mimeType: 'text/plain',
-      body: fs.createReadStream(file)
+      body: fs.createReadStream(path.join(__dirname, file))
     }
   }
 };
