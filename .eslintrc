@@ -1,0 +1,23 @@
+{
+  "extends": "eslint-config-airbnb",
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "__VERSION__": true,
+    "__NODE_ENV__": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "indent": [2, 2, { "SwitchCase": 0 }],
+    "no-param-reassign": [2, { "props": false }],
+
+    "no-var": 2,
+    "arrow-body-style": 0,
+    "strict": [2, "global"],
+    
+    "block-scoped-var": 0,
+    "padded-blocks": 0
+  },
+}

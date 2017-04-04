@@ -1,0 +1,5 @@
+
+node_modules
+
+# Don't track service account key
+agent-smith.json
